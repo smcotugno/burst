@@ -43,7 +43,8 @@ variable vm_count {
 
 variable privatevlanid {
   description = "private VLAN - network_count to true"
-  default  = "${ibm_network_vlan.vlan_private.id}"
+  default  = "123456"
+  # default  = "${ibm_network_vlan.vlan_private.id}"
 }
 
 variable publicvlanid {
