@@ -52,10 +52,16 @@ variable publicvlanid {
   default = "123456"
 }
 
+variable private_router {
+  description = "name of the roputer"
+  default = "routerNmae`"
+}
+
 variable network_count {
   description = "Setting to true will create a private vlan.  If set to false, you must provide the vlan id in privatevlanid"
   default = "true"
 }
+
 variable single_tenant {
   description = "Indicates type of tenancy: multi (false) single (true)"
   default = "false"
