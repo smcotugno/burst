@@ -13,7 +13,7 @@
 # Declare the modules used by this file
 ########################################################
 module "security" {
-  source  = "./"
+  source  = "./security"
 }
 
 ########################################################
