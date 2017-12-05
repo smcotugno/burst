@@ -2,7 +2,7 @@
 #Create file storage
 ##################################################
 
-resource "ibm_storage_file" "BustVS" {
+resource "ibm_storage_file" "burstvs" {
   type = "Performance"
   datacenter = "${var.datacenter}"
   capacity = "20"
