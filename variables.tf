@@ -59,7 +59,7 @@ variable private_router {
 
 variable network_count {
   description = "Setting to true will create a private vlan.  If set to false, you must provide the vlan id in privatevlanid"
-  default = "true"
+  default = 1
 }
 
 variable single_tenant {

@@ -43,7 +43,7 @@ resource "ibm_compute_vm_instance" "burstvs" {
   disks = [25, 10]
   ssh_key_ids = ["${ibm_compute_ssh_key.ssh_key.id}"]
   local_disk = false
-  private_security_group_ids = "${module.security.sg1_id}"
+  private_security_group_ids = ["${module.security.sg1_id}"]
   private_vlan_id = "${var.privatevlanid}"
   dedicated_acct_host_only = "${var.single_tenant}"
 }
